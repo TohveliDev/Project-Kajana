@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://bchbrouatrfsp"]
+
+[ext_resource type="Script" path="res://scripts/Wood.gd" id="1_fdkmn"]
+[ext_resource type="Texture2D" uid="uid://42fc6uxjlv64" path="res://sprites/PlaceholderWood.png" id="2_m1wpa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ww2qo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"no wood",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_m1wpa")
+}],
+"loop": true,
+"name": &"wood",
+"speed": 0.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0yjkd"]
+radius = 24.0
+
+[node name="Wood" type="Node2D"]
+script = ExtResource("1_fdkmn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.25, 0)
+scale = Vector2(0.98, 1)
+sprite_frames = SubResource("SpriteFrames_ww2qo")
+animation = &"no wood"
+
+[node name="Pickable" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pickable"]
+shape = SubResource("CircleShape2D_0yjkd")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="Marker2D" type="Marker2D" parent="."]
+
+[connection signal="body_entered" from="Pickable" to="." method="_on_pickable_body_entered"]
+[connection signal="body_exited" from="Pickable" to="." method="_on_pickable_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
