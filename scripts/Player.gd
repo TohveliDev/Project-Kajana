@@ -31,16 +31,16 @@ func play_anim(direction):
 			$AnimatedSprite2D.play("mov east")
 			
 		if direction.x > 0.5 and direction.y < -0.5:
-			$AnimatedSprite2D.play("mov ne")
+			$AnimatedSprite2D.play("mov north")
 			
 		if direction.x > 0.5 and direction.y > 0.5:
-			$AnimatedSprite2D.play("mov se")
+			$AnimatedSprite2D.play("mov south")
 			
 		if direction.x < -0.5 and direction.y > 0.5:
-			$AnimatedSprite2D.play("mov sw")
+			$AnimatedSprite2D.play("mov south")
 			
 		if direction.x > 0.5 and direction.y < -0.5:
-			$AnimatedSprite2D.play("mov nw")
+			$AnimatedSprite2D.play("mov north")
 			
 func player():
 	pass
