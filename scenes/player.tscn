@@ -1,11 +1,13 @@
-[gd_scene load_steps=36 format=3 uid="uid://dn1wecwbn5byy"]
+[gd_scene load_steps=38 format=3 uid="uid://dn1wecwbn5byy"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_4bv5e"]
 [ext_resource type="Texture2D" uid="uid://dybogtt40emgg" path="res://sprites/walk_strip8.png" id="2_e2h8u"]
 [ext_resource type="Texture2D" uid="uid://d07ovrnou3bxm" path="res://sprites/idle_strip3.png" id="2_n1i28"]
+[ext_resource type="Resource" uid="uid://bqccqnw5kwmac" path="res://inventory/PlayerInv.tres" id="2_namm8"]
 [ext_resource type="Texture2D" uid="uid://rrh6uviooj5p" path="res://sprites/walk_strip8_2.png" id="3_46f01"]
 [ext_resource type="Texture2D" uid="uid://dm3lvrokai28s" path="res://sprites/walk_strip4_2.png" id="4_74iam"]
 [ext_resource type="Texture2D" uid="uid://dsqqquyv2oane" path="res://sprites/walk_strip4.png" id="5_334pg"]
+[ext_resource type="PackedScene" uid="uid://bh45hk1b0cyda" path="res://scenes/inv_ui.tscn" id="8_7gkea"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q5ljq"]
 atlas = ExtResource("2_n1i28")
@@ -229,6 +231,7 @@ radius = 15.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_4bv5e")
+inv = ExtResource("2_namm8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(15.1334, -35.6227)
@@ -246,3 +249,14 @@ limit_left = -249
 limit_top = -149
 limit_right = 249
 limit_bottom = 149
+
+[node name="InvUI" parent="." instance=ExtResource("8_7gkea")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -62.0
+offset_top = -92.0
+offset_right = 91.0
+offset_bottom = -53.0
+grow_horizontal = 1
+grow_vertical = 1
