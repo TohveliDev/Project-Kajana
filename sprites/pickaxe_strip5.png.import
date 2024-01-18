@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dld6omt6844f2"
-path="res://.godot/imported/look_down.png-ff5f7fb0ca5a5be814394430654ba521.ctex"
+uid="uid://6yuajicoky2q"
+path="res://.godot/imported/pickaxe_strip5.png-53e6b8564960ee7c1a4acbb360e17276.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/look_down.png"
-dest_files=["res://.godot/imported/look_down.png-ff5f7fb0ca5a5be814394430654ba521.ctex"]
+source_file="res://sprites/pickaxe_strip5.png"
+dest_files=["res://.godot/imported/pickaxe_strip5.png-53e6b8564960ee7c1a4acbb360e17276.ctex"]
 
 [params]
 
