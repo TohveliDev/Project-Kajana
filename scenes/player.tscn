@@ -232,6 +232,7 @@ radius = 15.0
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_4bv5e")
 inv = ExtResource("2_namm8")
+metadata/_edit_vertical_guides_ = [15.0]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(15.1334, -35.6227)
@@ -254,9 +255,9 @@ limit_bottom = 149
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_left = -62.0
+offset_left = -55.0
 offset_top = -92.0
-offset_right = 91.0
-offset_bottom = -53.0
+offset_right = 85.0
+offset_bottom = -60.0
 grow_horizontal = 1
 grow_vertical = 1

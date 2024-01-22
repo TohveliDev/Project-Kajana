@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://c7dvkss585u1a"]
 
 [ext_resource type="Script" path="res://inventory/inv_item.gd" id="1_76ujs"]
-[ext_resource type="Texture2D" uid="uid://6y4qx0d01jok" path="res://sprites/Halko.png" id="2_1uxs6"]
+[ext_resource type="Texture2D" uid="uid://6y4qx0d01jok" path="res://sprites/Halko.png" id="2_dpgd1"]
 
 [resource]
 script = ExtResource("1_76ujs")
 name = "Wood"
-texture = ExtResource("2_1uxs6")
+texture = ExtResource("2_dpgd1")
