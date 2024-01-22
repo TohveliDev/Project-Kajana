@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dcdwdi2wam50q"]
+[gd_scene load_steps=7 format=3 uid="uid://dcdwdi2wam50q"]
 
 [ext_resource type="PackedScene" uid="uid://dn1wecwbn5byy" path="res://scenes/player.tscn" id="1_4d0f4"]
-[ext_resource type="Texture2D" uid="uid://dtwvfp3ys26gy" path="res://sprites/Lumi.png" id="2_3in7x"]
+[ext_resource type="Texture2D" uid="uid://bdp1v6g41aect" path="res://sprites/Lumi.png" id="2_3in7x"]
 [ext_resource type="PackedScene" uid="uid://bchbrouatrfsp" path="res://scenes/wood.tscn" id="3_ynqre"]
+[ext_resource type="PackedScene" uid="uid://cjolfgbmk16e1" path="res://scenes/morkula_collectable.tscn" id="4_5oj6w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d62uj"]
 texture = ExtResource("2_3in7x")
@@ -16,9 +17,6 @@ sources/0 = SubResource("TileSetAtlasSource_d62uj")
 [node name="World" type="Node2D"]
 metadata/_edit_vertical_guides_ = [-250.0, 250.0]
 metadata/_edit_horizontal_guides_ = [-150.0, 150.0]
-
-[node name="Player" parent="." instance=ExtResource("1_4d0f4")]
-position = Vector2(1, 1)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_dboej")
@@ -45,3 +43,12 @@ position = Vector2(-136, -67)
 
 [node name="Wood2" parent="." instance=ExtResource("3_ynqre")]
 position = Vector2(126, -41)
+
+[node name="morkula_collectable" parent="." instance=ExtResource("4_5oj6w")]
+position = Vector2(-95, 43)
+
+[node name="morkula_collectable2" parent="." instance=ExtResource("4_5oj6w")]
+position = Vector2(110, 64)
+
+[node name="Player" parent="." instance=ExtResource("1_4d0f4")]
+position = Vector2(1, 1)

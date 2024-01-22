@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://42fc6uxjlv64"
-path="res://.godot/imported/PlaceholderWood.png-28ea4d8f2cba5ad39626e0aae6fe949e.ctex"
+uid="uid://dqfj2n2jnaxj4"
+path="res://.godot/imported/Morkula.png-9eaf148d34471303abb358fb32b265af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/PlaceholderWood.png"
-dest_files=["res://.godot/imported/PlaceholderWood.png-28ea4d8f2cba5ad39626e0aae6fe949e.ctex"]
+source_file="res://sprites/Morkula.png"
+dest_files=["res://.godot/imported/Morkula.png-9eaf148d34471303abb358fb32b265af.ctex"]
 
 [params]
 

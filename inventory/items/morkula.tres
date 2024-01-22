@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://ckbqligasftd5"]
+
+[ext_resource type="Script" path="res://inventory/inv_item.gd" id="1_1f7vv"]
+[ext_resource type="Texture2D" uid="uid://dqfj2n2jnaxj4" path="res://sprites/Morkula.png" id="2_e7358"]
+
+[resource]
+script = ExtResource("1_1f7vv")
+name = "Morkula"
+texture = ExtResource("2_e7358")

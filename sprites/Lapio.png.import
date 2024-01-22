@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdp1v6g41aect"
-path="res://.godot/imported/Lumi.png-9c7864603448ee45459f9e86b281c923.ctex"
+uid="uid://c8j8m2i1ldaa5"
+path="res://.godot/imported/Lapio.png-3b8365f5b1a1b22572bb8bcc19208afc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Lumi.png"
-dest_files=["res://.godot/imported/Lumi.png-9c7864603448ee45459f9e86b281c923.ctex"]
+source_file="res://sprites/Lapio.png"
+dest_files=["res://.godot/imported/Lapio.png-3b8365f5b1a1b22572bb8bcc19208afc.ctex"]
 
 [params]
 

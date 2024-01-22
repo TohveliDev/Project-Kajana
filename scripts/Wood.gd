@@ -5,6 +5,9 @@ var picking = false
 
 var wood = preload("res://scenes/wood_collectable.tscn")
 
+@export var item: InvItem
+var player = null
+
 func _ready():
 	if state == "no wood":
 		$Timer.start()
@@ -22,6 +25,7 @@ func _process(delta):
 func _on_pickable_body_entered(body):
 	if body.has_method("player"):
 		picking = true
+		player = body
 
 
 func _on_pickable_body_exited(body):
@@ -37,5 +41,6 @@ func drop_wood():
 	var wood_inst = wood.instantiate()
 	wood_inst.global_position = $Marker2D.global_position
 	get_parent().add_child(wood_inst)
+	player.collect(item)
 	await get_tree().create_timer(3).timeout
 	$Timer.start()

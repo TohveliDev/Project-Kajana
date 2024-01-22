@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dyr2hgipqrxbi"]
 
-[ext_resource type="Texture2D" uid="uid://cao34x85nbbgd" path="res://icon.svg" id="1_pgskr"]
 [ext_resource type="Script" path="res://scripts/wood_collectable.gd" id="1_wn4s4"]
+[ext_resource type="Texture2D" uid="uid://6y4qx0d01jok" path="res://sprites/Halko.png" id="2_mxori"]
 
 [sub_resource type="Animation" id="Animation_qfy8m"]
 resource_name = "picked"
@@ -28,7 +28,7 @@ _data = {
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_pgskr")
+"texture": ExtResource("2_mxori")
 }],
 "loop": true,
 "name": &"default",
@@ -36,7 +36,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_pgskr")
+"texture": ExtResource("2_mxori")
 }],
 "loop": true,
 "name": &"picked",

@@ -46,3 +46,6 @@ func play_anim(direction):
 			
 func player():
 	pass
+	
+func collect(item):
+	inv.insert(item)

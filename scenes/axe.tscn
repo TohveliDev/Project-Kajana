@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://tymkanxmgkgr"]
+
+[sub_resource type="GDScript" id="GDScript_67qts"]
+script/source = "extends StaticBody2D
+
+@export var item: InvItem
+
+
+
+func _ready():
+	playercollect()
+
+func playercollect():
+	player.collect(item)
+"
+
+[node name="Axe" type="StaticBody2D"]
+script = SubResource("GDScript_67qts")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
