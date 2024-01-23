@@ -7,6 +7,7 @@ func _on_interactable_area_body_entered(body):
 	if body.has_method("player"):
 		player = body
 		playercollect()
+		print("+1 Morkula")
 		await get_tree().create_timer(0.1).timeout
 		self.queue_free()
 
