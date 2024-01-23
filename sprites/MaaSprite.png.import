@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bor5mmw2eiu82"
-path="res://.godot/imported/inv_slot_temp.png-1b946ea88d917f336b88315510c9fdc1.ctex"
+uid="uid://d38v6prev6lf6"
+path="res://.godot/imported/MaaSprite.png-fb4d512831e1697195dc905a3a85f1a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/inv_slot_temp.png"
-dest_files=["res://.godot/imported/inv_slot_temp.png-1b946ea88d917f336b88315510c9fdc1.ctex"]
+source_file="res://sprites/MaaSprite.png"
+dest_files=["res://.godot/imported/MaaSprite.png-fb4d512831e1697195dc905a3a85f1a4.ctex"]
 
 [params]
 
