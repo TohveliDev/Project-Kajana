@@ -1,52 +1,184 @@
-[gd_scene load_steps=6 format=3 uid="uid://bchbrouatrfsp"]
+[gd_scene load_steps=25 format=3 uid="uid://bchbrouatrfsp"]
 
 [ext_resource type="Script" path="res://scripts/Wood.gd" id="1_fdkmn"]
-[ext_resource type="Resource" uid="uid://c7dvkss585u1a" path="res://inventory/items/wood.tres" id="2_y3quu"]
-[ext_resource type="Texture2D" uid="uid://6y4qx0d01jok" path="res://sprites/Halko.png" id="3_204qn"]
+[ext_resource type="Texture2D" uid="uid://bepcuy5x72kcs" path="res://sprites/PinoSheet.png" id="3_c1jj8"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ww2qo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ayh0g"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dcet"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t173p"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8aavw"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0dad"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7yo7w"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1qk4a"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2tct"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1h2t"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0qyr"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(256, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ddki"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ld4ak"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujcrs"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(128, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wax1d"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(192, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bu43k"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(256, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3pe33"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bkmfp"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tp3em"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r3dhl"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(192, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkod4"]
+atlas = ExtResource("3_c1jj8")
+region = Rect2(256, 192, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4jp1m"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ayh0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0dcet")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t173p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8aavw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0dad")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7yo7w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1qk4a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c2tct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1h2t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0qyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ddki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ld4ak")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujcrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wax1d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bu43k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3pe33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bkmfp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tp3em")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r3dhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkod4")
+}, {
 "duration": 1.0,
 "texture": null
 }],
 "loop": true,
-"name": &"no wood",
-"speed": 0.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_204qn")
-}],
-"loop": true,
 "name": &"wood",
-"speed": 0.0
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0yjkd"]
-radius = 24.0
+radius = 35.0143
 
 [node name="Wood" type="Node2D"]
 script = ExtResource("1_fdkmn")
-item = ExtResource("2_y3quu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0.25, 0)
 scale = Vector2(0.98, 1)
-sprite_frames = SubResource("SpriteFrames_ww2qo")
+sprite_frames = SubResource("SpriteFrames_4jp1m")
 animation = &"wood"
 
-[node name="Pickable" type="Area2D" parent="."]
+[node name="pickable" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pickable"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pickable"]
+position = Vector2(-2, 11)
 shape = SubResource("CircleShape2D_0yjkd")
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
+[node name="timer" type="Timer" parent="."]
+wait_time = 0.5
 one_shot = true
 
 [node name="Marker2D" type="Marker2D" parent="."]
+gizmo_extents = 0.0
 
-[connection signal="body_entered" from="Pickable" to="." method="_on_pickable_body_entered"]
-[connection signal="body_exited" from="Pickable" to="." method="_on_pickable_body_exited"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="pickable" to="." method="_on_pickable_body_entered"]
+[connection signal="body_exited" from="pickable" to="." method="_on_pickable_body_exited"]
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]

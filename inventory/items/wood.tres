@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://6y4qx0d01jok" path="res://sprites/Halko.png" id="2_dpgd1"]
 
 [resource]
+resource_name = "Wood"
 script = ExtResource("1_76ujs")
 name = "Wood"
 texture = ExtResource("2_dpgd1")

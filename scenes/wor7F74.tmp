@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dcdwdi2wam50q"]
+[gd_scene load_steps=14 format=3 uid="uid://dcdwdi2wam50q"]
 
 [ext_resource type="PackedScene" uid="uid://dn1wecwbn5byy" path="res://scenes/player.tscn" id="1_4d0f4"]
 [ext_resource type="Texture2D" uid="uid://bdp1v6g41aect" path="res://sprites/Lumi.png" id="2_3in7x"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://bchbrouatrfsp" path="res://scenes/wood.tscn" id="3_ynqre"]
 [ext_resource type="PackedScene" uid="uid://cjolfgbmk16e1" path="res://scenes/morkula_collectable.tscn" id="4_5oj6w"]
 [ext_resource type="Texture2D" uid="uid://bvtdpafjkmney" path="res://sprites/ReunaSheet.png" id="4_qudlo"]
-[ext_resource type="Texture2D" uid="uid://b8a8awto5anu3" path="res://sprites/Kanto_Ei_Puuta.png" id="5_b7c5n"]
 [ext_resource type="PackedScene" uid="uid://dpd2tm2skihlk" path="res://scenes/Kanto.tscn" id="8_x1otw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d62uj"]
@@ -47,19 +46,12 @@ texture_region_size = Vector2i(32, 32)
 6:0/0 = 0
 7:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwo0p"]
-texture = ExtResource("5_b7c5n")
-texture_region_size = Vector2i(62, 32)
-0:0/0 = 0
-0:1/0 = 0
-
 [sub_resource type="TileSet" id="TileSet_dboej"]
 tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_d62uj")
 sources/1 = SubResource("TileSetAtlasSource_r8j18")
 sources/2 = SubResource("TileSetAtlasSource_u1ica")
 sources/3 = SubResource("TileSetAtlasSource_mwejl")
-sources/4 = SubResource("TileSetAtlasSource_mwo0p")
 
 [node name="World" type="Node2D"]
 metadata/_edit_vertical_guides_ = [-250.0, 250.0, 0.0, -128.0, 32.0, 96.0, 128.0, -96.0, -64.0]
@@ -95,15 +87,12 @@ position = Vector2(-95, 43)
 position = Vector2(111, 77)
 
 [node name="Node2D" parent="." instance=ExtResource("8_x1otw")]
-position = Vector2(144, -65)
+position = Vector2(-139, -64)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(-27, -74, -19, -90, -7, -105, 6, -105, 24, -73, 24, -72, 15, -71, -27, -72)
-
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(136, -44, 136, -54, 135, -64, 152, -64, 154, -60, 153, -51, 152, -43, 136, -43)
 
 [node name="Player" parent="." instance=ExtResource("1_4d0f4")]
 position = Vector2(0, 26)

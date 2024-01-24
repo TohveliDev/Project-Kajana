@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://dluwmbfxw2qu8" path="res://inventory/inv_ui_slot.tscn" id="3_uixwl"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xfbnn"]
-load_path = "res://.godot/imported/inv_bg_temp.png-9a77bf5f848819c04d995ae0f40a0d5d.ctex"
 
 [node name="InvUI" type="Control"]
 custom_minimum_size = Vector2(140, 32)

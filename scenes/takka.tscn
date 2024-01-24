@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dvavsij0c6kaf"]
 
-[ext_resource type="Script" path="res://scenes/takka.gd" id="1_xhu7f"]
+[ext_resource type="Script" path="res://scripts/takka.gd" id="1_xhu7f"]
 
 [node name="Takka" type="Node2D"]
 script = ExtResource("1_xhu7f")

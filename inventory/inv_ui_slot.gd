@@ -12,4 +12,7 @@ func update(slot: InvSlot):
 		item_visual.texture = slot.item.texture
 		if slot.amount > 1:
 			amount_num.visible = true
+		elif slot.amount == 0:
+			item_visual.visible = false
+			amount_num.visible = false
 		amount_num.text = str(slot.amount)

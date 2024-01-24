@@ -1,46 +1,46 @@
 extends Node2D
 
-var state = "no wood"
-var picking = false
+var player_in_area = false
+var currentFrame: int = 0
 
 var wood = preload("res://scenes/wood_collectable.tscn")
 
-@export var item: InvItem
-var player = null
-
 func _ready():
-	if state == "no wood":
-		$Timer.start()
-		
+	if currentFrame != 0:
+		$timer.start()
+
 func _process(delta):
-	if state == "no wood":
-		$AnimatedSprite2D.play("no wood")
-	if state == "wood":
-		$AnimatedSprite2D.play("wood")
-		if picking:
+	$AnimatedSprite2D.frame = currentFrame
+	if currentFrame < 20:
+		if player_in_area:
 			if Input.is_action_just_pressed("E"):
-				state = "no wood"
-				drop_wood()
+				currentFrame += 1
+				pick_wood()
+
 
 func _on_pickable_body_entered(body):
 	if body.has_method("player"):
-		picking = true
-		player = body
+		player_in_area = true
 
 
 func _on_pickable_body_exited(body):
 	if body.has_method("player"):
-		picking = false
-
+		player_in_area = false
 
 func _on_timer_timeout():
-	if state == "no wood":
-		state = "wood"
+	currentFrame -= 1
 
-func drop_wood():
-	var wood_inst = wood.instantiate()
-	wood_inst.global_position = $Marker2D.global_position
-	get_parent().add_child(wood_inst)
-	player.collect(item)
-	await get_tree().create_timer(3).timeout
-	$Timer.start()
+	if currentFrame == 0:
+		pass
+	elif currentFrame >= 20:
+		currentFrame = 20
+		$timer.start()
+	else:
+		$timer.start()
+
+func pick_wood():
+	var wood_instance = wood.instantiate()
+	wood_instance.global_position = $Marker2D.global_position
+	get_parent().add_child(wood_instance)
+	await get_tree().create_timer(1).timeout
+	$timer.start()

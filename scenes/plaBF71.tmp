@@ -1,11 +1,10 @@
-[gd_scene load_steps=44 format=3 uid="uid://dn1wecwbn5byy"]
+[gd_scene load_steps=38 format=3 uid="uid://dn1wecwbn5byy"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_4bv5e"]
 [ext_resource type="Texture2D" uid="uid://dybogtt40emgg" path="res://sprites/walk_strip8.png" id="2_e2h8u"]
 [ext_resource type="Texture2D" uid="uid://d07ovrnou3bxm" path="res://sprites/idle_strip3.png" id="2_n1i28"]
 [ext_resource type="Resource" uid="uid://bqccqnw5kwmac" path="res://inventory/PlayerInv.tres" id="2_namm8"]
 [ext_resource type="Texture2D" uid="uid://rrh6uviooj5p" path="res://sprites/walk_strip8_2.png" id="3_46f01"]
-[ext_resource type="Texture2D" uid="uid://bbiekihfkik8n" path="res://sprites/axe_strip5.png" id="3_bs7pc"]
 [ext_resource type="Texture2D" uid="uid://dm3lvrokai28s" path="res://sprites/walk_strip4_2.png" id="4_74iam"]
 [ext_resource type="Texture2D" uid="uid://dsqqquyv2oane" path="res://sprites/walk_strip4.png" id="5_334pg"]
 [ext_resource type="PackedScene" uid="uid://bh45hk1b0cyda" path="res://scenes/inv_ui.tscn" id="8_7gkea"]
@@ -118,26 +117,6 @@ region = Rect2(112, 0, 16, 16)
 atlas = ExtResource("3_46f01")
 region = Rect2(80, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_r5u1p"]
-atlas = ExtResource("3_bs7pc")
-region = Rect2(0, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_85idk"]
-atlas = ExtResource("3_bs7pc")
-region = Rect2(16, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vuic2"]
-atlas = ExtResource("3_bs7pc")
-region = Rect2(32, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a6uhp"]
-atlas = ExtResource("3_bs7pc")
-region = Rect2(48, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_72f28"]
-atlas = ExtResource("3_bs7pc")
-region = Rect2(64, 0, 16, 16)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_v45gp"]
 animations = [{
 "frames": [{
@@ -245,26 +224,6 @@ animations = [{
 "loop": true,
 "name": &"mov west",
 "speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r5u1p")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_85idk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vuic2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a6uhp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_72f28")
-}],
-"loop": true,
-"name": &"z_axe",
-"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_625s7"]
@@ -279,7 +238,7 @@ metadata/_edit_vertical_guides_ = [15.0]
 position = Vector2(15.1334, -35.6227)
 scale = Vector2(1.98221, 1.98221)
 sprite_frames = SubResource("SpriteFrames_v45gp")
-animation = &"z_axe"
+animation = &"mov west"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(15, -33)
@@ -302,9 +261,3 @@ offset_right = 85.0
 offset_bottom = -60.0
 grow_horizontal = 1
 grow_vertical = 1
-
-[node name="timer" type="Timer" parent="."]
-one_shot = true
-
-[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
-[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
